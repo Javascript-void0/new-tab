@@ -1,8 +1,15 @@
-* {
+:root {
+    --largest: 100vw;
+    --repeat: 4;
+    --outer-margin: 80px;
+}
+
+body {
     padding: 0;
     margin: 0;
-    font-family: Envy Code R, monospace;
+    font-family: SpaceGrotesk;
     overflow: hidden;
+    background:rgb(46, 53, 59);
 }
 
 @font-face {
@@ -10,73 +17,30 @@
     src: url(assets/Envy\ Code\ R.ttf);
 }
 
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(assets/SpaceGrotesk[wght].ttf);
+}
+
 #background {
     width: 100vw;
     height: 100vh;
-    background-image: url('assets/background2.jpg');
+    background-image: url('assets/background4.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
+    filter: blur(10rem);
 }
 
-#window {
-    margin: auto;
-    margin-top: calc((100vh - 30rem) * 2 / 5);
-    max-width: 50rem;
-    width: 90%;
-    height: 30rem;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    position: relative;
-    border-radius: 0.5rem;
-    color: rgb(211, 230, 217);
-}
-
-#window a {
-    color: rgb(211, 230, 217);
-    text-decoration: none;
-}
-
-#window a:hover {
-    color: rgb(239, 255, 244);
-}
-
-#outline {
-    margin: 10px;
-    height: calc(100% - 20px - 4px);
-    border-radius: 0.2rem;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-#content {
-    margin: 10px;
-    display: flex;
-}
-
-#content-right {
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
-    height: 435px;
-    margin-left: 10px;
-    padding-left: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.bar-empty {
-    color: #545c57;
-}
-
-.ascii {
+.c {
+    color: white;
+    position: absolute;
     text-align: center;
-}
-
-::-moz-selection {
-    color: #fff;
-    background: rgb(108, 129, 105);
-}
-
-::selection {
-    color: #fff;
-    background: rgb(108, 129, 105);
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    /* user-select: none; */
+    top: calc(50% - 20rem);
 }

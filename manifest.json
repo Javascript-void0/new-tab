@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "New Tab",
-    "version": "1.4.1",
+    "version": "1.6.1",
     "description": "Opens a Java's custom new tab page. ",
     "author": "Java",
     "chrome_url_overrides": {
