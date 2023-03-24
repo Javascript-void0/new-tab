@@ -1,6 +1,6 @@
 <h1>firefox new tab page</h1>
 
-![screenshot](assets/screenshot.jpg)
+![screenshot](assets/screenshot.gif)
 
 ## Requirements (Firefox)
 
